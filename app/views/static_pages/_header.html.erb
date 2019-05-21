@@ -4,8 +4,13 @@
             <div class="row align-items-center">
               <div class="col-lg-6 col-sm-6 col-6 header-top-left">
                 <ul>
-                  <%= link_to t(".signup"), "#" %>
-                  <%= link_to t(".login"), "#" %>
+                  <% if logged_in? %>
+                    <h6 style="color: white"> <%= t ".hello" %>, <%= current_user.name %> </h6>
+                    <%= link_to t(".logout"), logout_path, method: :delete %>
+                  <% else %>
+                  <%= link_to t(".signup"), signup_path %>
+                  <%= link_to t(".login"), login_path %>
+                  <% end %>
                 </ul>
               </div>
               <div class="col-lg-6 col-sm-6 col-6 header-top-right">
