@@ -4,9 +4,37 @@ en:
     header:
       signup: "Sign up"
       login: "Login"
+      logout: "Logout"
       home: "Home"
       about: "About"
       category: "Category tour"
       contact: "Contact"
+      hello: "Hello"
     footer:
       text_footer: "All rights reserved | This template is made with by Colorlib"
+  shared:
+    error_messages:
+      messages:
+        one: "The form contains %{count} error."
+        other: "The form contains %{count} errors."
+  sessions:
+    new:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      forgot_password: "Forgot password"
+      submit: "Log in"
+      confirm: "Confirmation"
+      create_account: "Create my account"
+      signup: "Sign up"
+      require_login: "Login to booking tour"
+      new_user: "New user?"
+    create:
+      login_fail: "Invalid email/password combination"
+      active_messages: "Account not activated. Check your email for the activation link."
+      login_access: "Login success"
+  users:
+    show:
+      user_invalid: "User invalid"
+    create:
+      welcome: "Welcome to booking tour"
