@@ -5,7 +5,7 @@ class CreateBookingRequests < ActiveRecord::Migration[5.2]
       t.string :email
       t.string :phone
       t.integer :quantity
-      t.boolean :payment
+      t.boolean :payment, default: false
       t.references :user, foreign_key: true
       t.references :tour, foreign_key: true
 

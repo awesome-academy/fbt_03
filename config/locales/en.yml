@@ -38,3 +38,15 @@ en:
       user_invalid: "User invalid"
     create:
       welcome: "Welcome to booking tour"
+  booking_tour:
+    new:
+      title: "Booking your tour"
+      h1: "Let booking your adventure"
+      name: "Name"
+      email: "Email"
+      phone: "Phone"
+      quantity: "quantity"
+      booking: "Booking"
+  flash:
+    bk_success: "Booking success"
+    over_quantity: "Over Quantity"
