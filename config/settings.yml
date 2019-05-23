@@ -11,3 +11,4 @@ domain: "gmail.com"
 two_hours: 2
 host_local: "localhost"
 port_local: 3000
+tour_quantity_maximum: 50
