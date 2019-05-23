@@ -1,6 +1,7 @@
 class User < ApplicationRecord
-  # has_many :booking_requests, :comments, dependent: :destroy
-  # has_many :reviews, through: :comments, dependent: :destroy
+  has_many :comments, dependent: :destroy
+  has_and_belongs_to_many :tours
+  has_many :reviews, through: :comments, dependent: :destroy
   enum role: {user: 0, admin: 1}
 
   validates :name, presence: true,
