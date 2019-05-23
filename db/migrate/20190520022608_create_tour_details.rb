@@ -9,5 +9,6 @@ class CreateTourDetails < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_index :tour_details, [:category_id, :created_at]
   end
 end

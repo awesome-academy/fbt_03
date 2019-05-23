@@ -11,3 +11,7 @@ domain: "gmail.com"
 two_hours: 2
 host_local: "localhost"
 port_local: 3000
+paginate_home: 3
+paginate_view_detail: 6
+one: 1
+three: 3
