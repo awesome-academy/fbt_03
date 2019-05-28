@@ -1,0 +1,31 @@
+<section class="destinations-area section-gap">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="title text-center">
+        <h1 class="mb-10"> <%= t("static_pages.header.list_tour") %> </h1>
+      </div>
+    </div>
+    <%= will_paginate @all_tours %>
+    <div class="row">
+      <% @all_tours.each do |tour| %>
+        <div class="col-lg-4">
+          <div class="single-destinations">
+            <div class="thumb">
+              <%= image_tag (get_image tour.tour_detail), size: "720x480" %>
+            </div>
+            <div class="details">
+              <h4 class="d-flex justify-content-between">
+                <a href=""><%= tour.name %></a>
+              </h4>
+              <p>
+                <%= link_to t("static_pages.header.book_tour"), "#" %> | <%= link_to t("static_pages.header.view_detail"), tour %>
+                <p><%= t("static_pages.header.duration") %>: <%= tour.duration %></p>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= will_paginate @all_tours %>
+  </div>
+</section>

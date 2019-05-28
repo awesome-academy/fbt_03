@@ -7,9 +7,20 @@ en:
       logout: "Logout"
       home: "Home"
       about: "About"
-      category: "Category tour"
+      all_tour: "All tour"
       contact: "Contact"
       hello: "Hello"
+      list_tour: "Danh sách tất cả các Tour"
+      book_tour: "Book tour"
+      duration: "Thời gian tour"
+      view_detail: "View detail"
+    view_detail:
+      price: "Đơn giá"
+      price_percent: "Đơn giá/người"
+      start_time: "Giờ khởi hành"
+      gmt: "Ha Noi"
+      booking: "Đặt tour ngay"
+      duration: "Thời gian tour"
     footer:
       text_footer: "All rights reserved | This template is made with by Colorlib"
   shared:
@@ -38,3 +49,6 @@ en:
       user_invalid: "User invalid"
     create:
       welcome: "Welcome to booking tour"
+  tour_details:
+    show:
+      tour_not_found: "Tour not found"
